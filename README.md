@@ -3,13 +3,21 @@
 
 Replace transformer for panto.
 
+It uses [replacestream](https://www.npmjs.com/package/replacestream) to replace and receives the same syntax.
+
 ```js
 panto.loadTransformer('replace');
 
-panto.pick('**/*.js').replace();
+panto.pick('**/*.js').replace({
+    replacements: [
+                    [/\bfoo\b/, 'bar'],
+                    [/(\d[4]-\d[2]-d[2])/, '$2/$3/$1']
+                ]
+});
 ```
 
 ## options
+ - replacements: Array
 
 [npm-url]: https://npmjs.org/package/panto-transformer-replace
 [downloads-image]: http://img.shields.io/npm/dm/panto-transformer-replace.svg
