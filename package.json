@@ -1,6 +1,6 @@
 {
   "name": "panto-transformer-replace",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Replace transformer for panto",
   "main": "index.js",
   "scripts": {
@@ -25,11 +25,15 @@
   },
   "homepage": "https://github.com/pantojs/panto-transformer-replace",
   "dependencies": {
-    "panto-transformer": "^0.2.1",
+    "panto-transformer": "^0.2.4",
     "replacestream": "^4.0.0",
     "through2": "^2.0.1"
   },
   "devDependencies": {
-    "panto": "0.0.24"
+    "coveralls": "^2.11.12",
+    "mocha": "^2.5.3",
+    "mocha-lcov-reporter": "^1.2.0",
+    "panto": "0.0.30",
+    "pre-commit": "^1.1.3"
   }
 }
